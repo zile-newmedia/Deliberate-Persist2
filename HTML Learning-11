@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+<body>
+
+<h1>Html5 新增的结构标签</h1>
+
+<br>
+<br>
+<br>
+
+<h1>1.figure\figcaption</h1>
+<h2>·用于对元素进行组合，多用于图片与图片描述的组合</h2>
+
+<h2>·语法：
+    <xmp>
+        <figure>
+            <img scr=""  alt=""  title="">
+            <figcaption>figure的标题</figcaption>
+        </figure>
+    </xmp>
+</h2>
+
+<figure>
+   <img src="HTML Learning-10 other/web structure.jpg" alt="网页结构"  width="1000px" border="10px" title="figure标签">
+    <figcaption><h2>网页结构</h2></figcaption>
+</figure>
+
+
+<br>
+<br>
+<br>
+
+<h1>2.details</h1>
+<h2>·用于描述文档或文档某个部分的细节（由"实心黑色倒三角"展开细节）</h2>
+<h3>·语法
+    <xmp>
+        <details>
+            <summary>details中的标题</summary>
+            <p>详细的内容</p>
+        </details>
+    </xmp>
+
+<details>
+            <summary>关于科比</summary>
+            <p>科比·比恩·布莱恩特（Kobe Bean Bryant，1978年8月23日—2020年1月26日），<br>出生于美国宾夕法尼亚州费城，>前美国职业篮球运动员，司职得分后卫/小前锋（锋卫摇摆人），绰号“黑曼巴”/“小飞侠”。</p>
+</details>
+
+<br>
+<br>
+<br>
+
+<h1>3.mark</h1>
+<h2>·定义带有记号的文本，它会给你你要突出显示的文本下加个背景色</h2>
+<h2>·语法：
+    <xmp>
+        <p>你是<mark>利拉德</mark>吗？</p>
+    </xmp>
+</h2>
+
+<h2>你是<mark>利拉德</mark>吗？</h2>
+
+<br>
+<br>
+<br>
+
+<h1>4.meter</h1>
+
+<h2>·定义度量衡。仅用于已知最大和最小的度量</h2>
+<h2>·语法：
+    <h3>#low:最低临界点   high:最高临界点</h3>
+<xmp>
+    <meter min="0" max="100" value="80"></meter>
+    <meter min="0" max="100" value="86" low="20" high="80"></meter>
+</xmp>
+</h2>
+
+<h3>
+    智力<meter min="0" max="100" value="80"></meter>
+    <br>
+    体力<meter min="0" max="100" value="86" low="20" high="80"></meter>
+</h3>
+
+<br>
+<br>
+<br>
+
+<h1>5.progress</h1>
+    <h2>·定义运行中的进度（进程）</h2>
+    <h2>·语法：
+        <h3>#max:定义完成值   value：定义当前值</h3>
+        <xmp>
+            <progress max="100" value="20"></progress>
+        </xmp>
+    </h2>
+    <h3>
+    书本阅读量<progress max="100" value="20"></progress>
+    </h3>
+
+
+
+</body>
+</html>
