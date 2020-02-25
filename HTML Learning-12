@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+<body>
+
+<h1>视频video</h1>
+
+<br>
+
+<h3>#视频格式：1.MP4  2.ogg移动端 3.webM高清</h3>
+
+<h2>
+<ul>
+    <li>video标签定义视频，比如电影片段或其他视频流</li>
+    <li>语法：<xmp><video src="movie.mp4" contro autoplay hoop muted poster="图片"></video></xmp></li>
+    <li>属性：
+        <ol>
+            <li>autoplay:视频就绪后马上播放</li>
+            <li>control:向用户显示控件（完整系列）</li>
+            <li>width;height:视频播放器宽、高</li>
+            <li>loop:循环播放</li>
+            <li>muted:静音播放</li>
+            <li>poster：视频前显示的图像</li>
+        </ol>
+    </li>
+</ul>
+</h2>
+
+
+<br>
+<br>
+<br>
+
+
+
+<h1>音频audio</h1>
+<br>
+<h3>#audio支持格式：1.ogg 2.mp3 3.wav</h3>
+
+<h2>
+    <ul>
+        <li>audio标签定义声音，比如音乐或其他音频流</li>
+        <li>语法：<xmp><audio src="someaudio.mp3">您的浏览器不支持audio标签</audio></xmp></li>
+        <li>属性：
+        <ol>
+            <li>autoplay:视频就绪后马上播放</li>
+            <li>control:向用户显示控件（完整系列）</li>
+            <li>width;height:视频播放器宽、高</li>
+            <li>loop:循环播放</li>
+            <li>muted:静音播放</li>
+            <li>poster：视频前显示的图像</li>
+            <li>注意：loop属性值  正数（代表播放次数）；  负数或者不加任何属性值（代表无限播放）</li>
+        </ol></li>
+    </ul>
+
+
+</h2>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<h1>source标签</h1>
+
+<br>
+
+<h2>
+<ul>
+    <li>source标签：是媒介元素（比如video和audio定义媒介资源）</li>
+    <li>source标签允许您规定可替换的视频/音频文件供浏览器根据它对媒体类型或者编解码器的支持进行选择</li>
+    <li>语法：<xmp>
+        <audio controls>
+            <source src="horse.ogg">
+            <source src="horse.mp3">
+            Your browser does not support the a div element
+        </audio></xmp>
+    </li>
+</ul>
+</h2>
+
+
+
+
+
+</body>
+</html>
