@@ -1,0 +1,61 @@
+# 体验切片
+# 序列名[开始位置的下标:结束位置的下标:步长](注意：“开始包含，结束不包含”)
+
+str1 = '12345678'
+
+print(str1[2:5:1])
+print(str1[2:5:2])
+print(str1[2:5])
+print(str1[:5])
+print(str1[2:])
+print(str1[:])
+
+# 负数
+print(str1[::-1])   #如果步长为负数，表示倒叙选取
+print(str1[-4:-1])
+print(str1[-4:-1:-1])   #不能选取出数据：从“-4”开始到“-1”结束，选取方向为从左到右，但是“-1”步长：从右边向左选取
+#   ******   如果选取方向（下标开始到结束的方向）和步长的方向冲突，则无法选取数据
+
+
+
+# 字符串常用操作方法之查找：查找子串在字符串中的位置或出现的次数
+
+"""
+·find():
+1.定义：检测某个子串是否包含在这个字符串中，如果在则返回这个子串开始的位置下标，否则则返回“-1”(返回“-1”！！！)
+2.语法：字符串序列.find(子串,开始位置下标,结束位置下标)
+3.注意：开始和结束位置下标可以省略，表示在整个字符串序列中查找
+"""
+mystr = "hello world and itcast and itheima and python"
+
+print(mystr.find('and'))
+print(mystr.find('and',15,30))
+print(mystr.find('ands'))
+
+
+
+"""
+·index():
+1.检测某个子串是否包含在这个字符串中，如果在则返回这个子串开始的位置下标，否则则报错异常(报错“异常”！！！)
+2.语法：字符串序列.index(子串,开始位置下标,结束位置下标)
+3.注意：开始和结束位置下标可以省略，表示在整个字符串序列中查找
+"""
+mystr = "hello world and itcast and itheima and python"
+
+print(mystr.index('and'))
+print(mystr.index('and',15,30))
+print(mystr.index('ands'))
+
+
+
+"""
+·count():
+1.返回某个子串在字符串中出现的次数
+2.语法：字符串序列.count(子串,开始位置下标,结束位置下标)
+3.注意：开始和结束位置下标可以省略，表示在整个字符串序列中查找
+"""
+mystr = "hello world and itcast and itheima and python"
+
+print(mystr.count('and'))
+print(mystr.count('ands'))
+print(mystr.count('and',0,20))
