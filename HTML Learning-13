@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Leaning</title>
+
+
+
+
+
+
+
+<style type="text/css">
+                    p1{
+                        color:red;
+                        font-size:50px
+                    }
+                </style>
+
+
+
+
+
+
+<link href="my.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+<h2>
+    <p2> embed标签</p2>
+    <ul>
+        <li>定义；嵌入的内容，比如插件、声音等；必须有src属性</li>
+        <li>语法：<xmp><embed src="~.mp4"></xmp></li>
+    </ul>
+</h2>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<h1>CSS简介</h1>
+<h2><strong>#计算机(执行)优先级：行内样式>内部样式>外部样式>导入样式</strong></h2>
+
+<br>
+
+<h2>CSS(Cascading Style Sheets)层叠样式表（即级联样式表），简称样式。</h2>
+
+<h2>
+<ul>
+    <li>用于HTML文档中元素样式的定义：实现了将内容与表现分离，提高代码的可重用性和可维护性</li>
+    <li>文件后缀是“.css”</li>
+    <li>#html-页面结构（结构层）   #css-页面美容（表示层）   #javascript(js)-行为层</li>
+</ul>
+</h2>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<h1>CSS引入方式</h1>
+
+<h2>一、内联方式（行内样式）
+    <ul>
+        <li>直接把css代码用style属性添加到开始标签中</li>
+        <li>语法：<xmp><p style ="color:purple;font-size:50px">科比·布莱恩特</p></xmp></li>
+        <p style ="color:purple;font-size:50px">科比·布莱恩特</p>
+    </ul>
+</h2>
+
+<br>
+
+<h2>二、内部样式表
+     <ul>
+        <li>直接把css代码添加到头部的style标签中</li>
+        <li>语法：<xmp>
+            <head>
+                <style type="text/css">
+                    p{
+                        color:red
+                    }
+                </style>
+            </head>
+            <body>
+                <p>达米安·利拉德</p>
+            </body>
+
+        </xmp>
+        </li>
+         <p1>达米安·利拉德</p1>
+    </ul>
+</h2>
+
+
+
+<br>
+
+<h2>三、外部样式表
+     <ul>
+        <li>样式调用-Stylesheet</li>
+        <li>语法：<xmp>
+            1.在html文件中：
+            <head>
+                <link href="my.css" rel="stylesheet">
+            </head>
+            <body>
+                <p>勒布朗·詹姆斯</p>
+            </body>
+
+
+
+            2.在css文件中：
+            p{
+            color:purple;
+            font-size:50px
+            }
+            </xmp></li>
+          <p>勒布朗·詹姆斯</p>
+     </ul>
+
+
+</h2>
+
+<br>
+
+
+<h2>四、导入式（不推荐）
+     <ul>
+        <li>不推荐使用导入式的主要原因：只能用于加载CSS；link标签用途更多（如定义rel连接属性等）</li>
+        <li>语法：<xmp>
+            <head>
+                <style type="text/css">
+                    @import url(my.css);
+                </style>
+            </head>
+            <body>
+                <p>詹姆斯·哈登</p>
+            </body>
+        </xmp></li>
+         <p3>詹姆斯·哈登</p3>
+    </ul>
+
+</h2>
+
+
+
+
+
+
+</body>
+</html>
