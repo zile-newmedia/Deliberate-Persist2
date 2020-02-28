@@ -1,0 +1,57 @@
+# 字符串常用操作方法之修改（常用）
+mystr ="hello world and itcast and itheima and Python"
+
+# 1.replace:替换（需求：把and换成he）
+new_str = mystr.replace('and','he','3') #"3"为替换次数：若超出出现次数，则替换所有这个子串
+# 说明replace函数有返回值，返回值是修改后的字符串
+print(mystr)
+print(new_str)
+
+# ***** 调用replace函数后，发现原有字符串的数据并没有做到修改，修改后的数据是replace函数的返回值
+# ----- 说明字符串是不可变数据类型
+
+
+
+# 2.split():按照指定字符分割字符串
+# 语法：字符串序列.split(分割字符，num) #num表示的是分割字符出现的次数，即将来返回数据个数为num+1个。
+# split()  --- 分割，返回一个列表，会丢失分割字符
+list1 =mystr.str('and')
+list1 =mystr.str('and',2) #2为分割字符出现的次数
+
+
+
+# 3.join():用一个字符或子串合并字符串，即将多个字符串合并为一个新的字符串。
+# 语法：字符或子串.join(多字符串组成的序列)
+mylist = ['aa','bb','cc']
+# aa……bb………cc
+new_str='……'.join(mylist)
+print(new_str)
+
+
+
+
+
+
+# 字符串常用操作方法之修改大小写转换（非重点）
+mystr = "hello world and itcast and itheima and Python"
+
+new_str = mystr.capitalize() #字符串首字母大写
+new_str = mystr.title() #字符串中每个单词首字母大写
+new_str = mystr.upper() #小写转大写
+new_str = mystr.lower() #大写转小写
+
+
+
+
+
+
+# 字符串常用操作方法之删除空白字符（非重点）
+mystr = "hello world and itcast and itheima and Python"
+
+new_str = mystr.lstrip() #删除左侧空白字符
+new_str = mystr.restrip() #删除右侧空白字符
+new_str = mystr.strip() #删除两侧空白字符
+
+
+
+
