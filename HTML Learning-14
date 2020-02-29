@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-14</title>
+
+<style>
+    .Lillard{
+            color:red;
+            font-size:100px
+            }
+
+    #lillard{
+            color:red;
+            font-size:80px
+            }
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+<h1>CSS语法</h1>
+
+<h2>
+    <ol>
+        <li>CSS是以属性/值对形式出现</li>
+        <li>属性和属性值之间用冒号（：）连接</li>
+        <li>多对属性之间用分号（；）隔开</li>
+        <li>例子：color:red;</li>
+    </ol>
+</h2>
+
+
+<br>
+<br>
+
+
+<h1>CSS注释</h1>
+<h2>
+   <ul>
+
+       <li> /*CSS注释语句*/ </li>
+       <li>html/css注释快捷键：
+           <ol>
+               <li> ctrl+/ :单行注释/取消注释 </li>
+               <li> ctrl+shift+l :多行注释/取消注释</li>
+           </ol>
+       </li>
+
+
+
+   </ul>
+</h2>
+
+
+<br>
+<br>
+
+<h1>类选择器和ID选择器</h1>
+<h2>
+    <ul>
+        <li>类选择器
+            <ol>
+                <li> .classname{} (例子：.box{color:red;})</li>
+                <li>注意：1.类名不能以数字开头 2.一个页面中class名字可以重复</li>
+                <li><xmp>
+                    <head>
+                        <style>
+                            .Lillard{
+                                     color:red;
+                                     font-size:100px
+                                    }
+                        </style>
+                    </head>
+
+                    <body>
+                    <p class="Lillard">利拉德</p>
+                    </body>
+                </xmp></li>
+            </ol>
+        </li>
+
+        <li>ID选择器
+            <ol>
+                <li> #idname{} （例子：#box{color:red;}）</li>
+                <li>注意：1.一个页面中id相同的id名只能出现一次!!! 2.一般重复使用的样式不使用ID选择器，因为ID属性是唯一的</li>
+                <li><xmp>
+                    <head>
+                        <style>
+                            #lillard{
+                                     color:red;
+                                     font-size:80px
+                                    }
+                        </style>
+                    </head>
+
+                    <body>
+                    <p id="lillard">Lillard</p>
+                    </body>
+                </xmp></li>
+            </ol>
+        </li>
+
+        <li>元素选择器指的是：<xmp>
+            <head>
+                <style>
+                    p{
+                        color:red;
+                      }
+                </style>
+            </head>
+
+            <body>
+            <p>李白</p>
+            </body>
+        </xmp></li>
+    </ul>
+</h2>
+
+
+<br>
+<br>
+
+<p class="Lillard">利拉德</p>
+<p id="lillard">Lillard</p>
+
+
+
+
+</body>
+</html>
