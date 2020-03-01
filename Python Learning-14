@@ -1,0 +1,99 @@
+# 字符串常用操作方法之字符串对称
+"""
+1.ljust():返回一个原字符串左对齐，并使用指定字符（默认空格）填充至对应长度的新字符串。
+#语法：字符串序列.ljust(长度，填充字符)
+2.rjust():…………右…………
+#语法：字符串序列.rjust(长度，填充字符)
+3.center():…………居中…………
+#语法：字符串序列.center(长度，填充字符)
+"""
+
+
+
+# 字符串常用操作方法之判断开头或结尾
+"""
+1.startswith():判断字符串是否以某个字串开头
+2.endswith():…………结尾
+"""
+mystr = "hello world"
+
+print(mystr.startswith('hello'))
+print(mystr.startswith('hell'))
+print(mystr.startswith('hells'))
+print(mystr.endswith('world'))
+
+
+
+
+
+
+# 字符串常用操作方法之判断：判断是否…………，返回"True"或"False"
+mystr = "hello world"
+
+
+
+#1.isalpha()：字母（全是）
+print(mystr.isalpa())
+
+
+
+#2.isdigit():数字（只包含）
+print(mystr.isdigit)
+
+mystr1 ='12345'
+print(mystr1.iisdigit())
+
+
+
+#3.isalnum():数字或字或组名（全是）
+print(mystr.isalnum())
+print(mystr1.isalnum())
+
+mystr2 ='abc123'
+print(mystr2.isalnum())
+
+
+
+#4.isspace:空白（只包括）
+mystr3 =''
+print(mystr3.isspace())
+
+
+
+
+
+# 列表的常用操作
+"""
+列表的作用是一次性储存多个数据，程序员可以对这些数据进行增、删、改、查。
+"""
+
+#下标查找：
+name_list = ['Kobe','James','Durant']
+print(name_list)
+print(name_list[0])
+
+
+#函数查找
+"""
+1、index()：返回指定数据所在的位置下标
+语法：列表序列.index(数据，开始位置下标，结束位置下标)
+""" 
+print(name_list.index("Kobe"),0,2)
+#注意：如果查找的数据不存在则报错
+
+
+
+"""
+2、count():统计指定数据在当前列表中出现的次数
+"""
+print(name_list.count('Kobe'))
+
+
+
+"""
+3.len():访问列表长度，即列表中数据的个数
+"""
+print(len(name,list))
+
+
+
