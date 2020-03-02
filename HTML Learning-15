@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-15</title>
+
+    <style>
+        p,div,h3,i,Tatum,#Bill{color:purple;font-size:50px}
+
+
+
+        .header{height:100px;width:2600px;background-color:red;}
+        .content1{width:300px;float:left;height:400px;background-color:green;}
+        .content2{width:3000px;height:400px;background-color:blue;}
+        .footer{height:100px;width:2600px;background-color:yellow;}
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+<h1>合并选择器</h1>
+<h2>
+    <ul>
+        <li>语法：“选择器1，选择器2，…………{}”</li>
+        <li>作用：提取共同的样式，减少重复代码</li>
+        <li>例子：<xmp>
+            <head>
+                <style>
+                    p,div,h3,i,Tatum,#Bill{color:purple;font-size:50px}
+                </style>
+            </head>
+
+            <body>
+            <p>科比</p>
+            <div>詹姆斯</div>
+            <h3>利拉德</h3>
+            <i>哈登;</i>
+            <i class="Tatum">塔图姆;</i>
+            <i id="Bill">比尔</i>
+            </body>
+
+        </xmp></li>
+    </ul>
+</h2>
+
+<p>科比</p>
+<div>詹姆斯</div>
+<h3>利拉德</h3>
+<i>哈登;</i>
+<i class="Tatum">塔图姆;</i>
+<i id="Bill">比尔</i>
+
+
+<br>
+<br>
+
+
+<h1>div+css布局</h1>
+<h2>
+<ul>
+    <li>内容和显示分离，便于维护扩展，方便网页布局</li>
+    <li> div:
+        <ol>
+        <li>可定义文档中的分区或节</li>
+        <li>可以把文档分割为独立不同的部分</li>
+        <li>是一个块级元素</li>
+        <li>通常与css配合，表现形式更强</li>
+    </ol>
+    </li>
+    <li>势力布局时需要用到的css属性：
+        <ol>
+            <li>width:数值;height:数值</li>
+            <li>background-color:颜色</li>
+            <li>float：(left);使div不占据一行</li>
+        </ol>
+    </li>
+    <li>例子：<xmp>
+        <head>
+            <style>
+                .header{height:100px;width:2600px;background-color:red;}
+                .content1{width:300px;float:left;height:400px;background-color:green;}
+                .content2{width:3000px;height:400px;background-color:blue;}
+                .footer{height:100px;width:2600px;background-color:yellow;}
+            </style>
+        </head>
+
+        <body>
+            <div class="header"></div>
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="footer"></div>
+        </body>
+    </xmp></li>
+</ul>
+</h2>
+
+<div class="header"></div>
+<div class="content1"></div>
+<div class="content2"></div>
+<div class="footer"></div>
+
+
+<br>
+<br>
+
+
+
+
+<h1>背景颜色和图像</h1>
+<h2><strong>#放置于head的style中，用div块存储。</strong>
+<ul>background-color颜色取值：
+    <li>关键字：（red）</li>
+    <li>十六进制：#f00  #0f0  #00f</li>
+    <li>rgb(0,0,0)  参数取值范围：0-255</li>
+    <li>rgba(0,0,0,0.5)  最后一个参数取值范围0-1</li>
+</ul>
+
+<ul>
+    <li>background-image:url("images/~.jpg")</li>
+    <li>background-repeat:no-repeat;（背景图片仅显示一次）   repeat;（水平、垂直重复显示）  repeat-x;（水平显示）  repeat-y;（垂直显示）</li>
+    <li>background-size:~px ~px;(length:若只设置一个值，则第二个值被设置为"auto")<br>
+        background-size:~% ~%;(percentage:以父元素(div)的百分比来设置；若只设置一个值，则第二个值被设置为"auto")<br>
+        background-size:cover;(扩展到足够大，显示部分不完全)<br>
+        background-size:contain;(扩展至最大，但使宽度和高度完全适应区域)
+    </li>
+</ul>
+</h2>
+
+
+
+</body>
+</html>
