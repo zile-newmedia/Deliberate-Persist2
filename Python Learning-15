@@ -1,0 +1,56 @@
+# 判断是否存在
+"""
+·in：判断指定数据在某个列表序列，如果在则返回True，否则返回False。
+·not in：…………不在…………。
+"""
+name_list = ['Kobe','James','Harden']
+print('Lillard'in name_list)
+print('Kobe'not in name_list)
+
+
+
+# 判断是否存在 需求:注册邮箱，用户输入一个账号名，判读这个账号名是否存在，提示用户，否则提示可以注册
+"""
+1.用户输入账号
+2.判断if…………else
+"""
+name = input('请输入您的邮箱账号名：')
+if name in name_list:
+    #提示用户名已经存在
+    print(f'您输入的名字是{name},此用户名已经存在')
+else:
+    #提示可以注册
+    print(f'您输入的名字是{name},可以注册')
+
+
+
+name_list =['Kobe','James','Lillard']
+"""
+增加-append():列表结尾追加数据
+语法：列表序列.append(数据)
+"""
+name_list.append('Rose')
+name_list.append("[Morant,Irving]")
+print(name_list)
+#推断：1.列表数据是可改的 --》列表为可变类型   2.append函数追加数据的时候，如果数据是一个序列，则追加整个序列到列表的结尾
+
+
+"""
+增加-extend():列表结尾追加数据，如果数据是一个序列，则将这个序列的数据逐一添加到列表
+语法:列表序列.extend(数据)
+"""
+name_list.extend('Davis')
+name_list.extend(['Curry','Thomson'])
+print(name_list)
+#extend()追加数据是一个序列，把数据序列里面的数据拆开然后逐一追加到列表的结尾
+
+
+"""
+增加-insert()：指定位置新增数据
+语法:列表序列.insert(位置下标，数据)
+"""
+#name_list.insert(下标，数据)
+name_list.insert(0,'Durant')
+print(name_list)
+
+
