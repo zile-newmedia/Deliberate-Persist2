@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-16</title>
+</head>
+
+
+<body>
+
+<h1>背景图片位置</h1>
+
+<h2> #放置于style属性里面
+    <ul>
+        <li> background-position:center center; (第一个参数代表水平位置 第一个参数代表垂直位置)</li>
+        <li> background-position:top; (第二个参数默认是center)</li>
+        <li> background-position:30px 10px; (第一个参数代表水平位置 第一个参数代表垂直位置) </li>
+        <li> background-position:50px center; (混搭)</li>
+    </ul>
+</h2>
+
+
+<h2>
+    <ul>关于background定位：
+    <li>方位名称：left right top bottom center</li>
+    <li>精确数字:……px</li>
+    <li>混搭</li>
+    </ul>
+</h2>
+
+
+<br>
+<br>
+<br>
+
+
+<h1>背景附着</h1>
+<h2>background简写属性在一个声明中设置所用的背景属性。</h2>
+
+<h2>
+<ol>可以设置以下属性：
+    <li>background-color;</li>
+    <li>background-image;</li>
+    <li>background-repeat;</li>
+    <li>background-attachment(背景附着);</li>
+    <li>background-position;</li>
+    <li>background-size;</li>
+    <li>#注意：如果不设置其中的值，也不会出问题，取默认值</li>
+</ol>
+    <p>例子：p{background:#foo url("images/Kobe.jpg") no-repeat fixed 30px 20px;}</p>
+</h2>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<h1>字体属性</h1>
+<h2>
+<ol>
+    <li>color:规定文本的颜色
+        <ul>举例
+            <li>div{color:red;}</li>
+            <li>div{color:ff0000;}</li>
+            <li>div{color:255,0,0;}</li>
+            <li>div{color:255,0,0,.5}</li>
+        </ul>
+    </li>
+
+    <li>font-style:指定文本的字体样式
+         <ul>
+            <li>默认值-normal</li>
+            <li>属性值-italic(斜体)</li>
+            <li>例子：p{font-style:italic}</li>
+        </ul>
+    </li>
+
+    <li>font-size:指定文体大小，通过像素来指定字体大小
+         <ul>
+            <li>1px=1像素</li>
+            <li>p{font-size:12px}</li>
+        </ul>
+    </li>
+
+    <li>font-family:定义文本使用某种字体
+         <ul>
+            <li>p{font-family:"微软雅黑"}</li>
+            <li>p{font-family:"宋体"}</li>
+        </ul>
+    </li>
+
+    <li>font-weight:指定文字的粗细
+         <ul>p{font-weight:…………}
+            <li>normal</li>
+            <li>bold(粗的)</li>
+            <li>bolder(更粗的)</li>
+            <li>lighter</li>
+            <li>light</li>
+            <li>定义由粗到细的字符，输入精确数字来设置：400(等同于normal)-700(等同于bold)</li>
+        </ul>
+    </li>
+
+</ol>
+</h2>
+
+
+
+
+</body>
+</html>
