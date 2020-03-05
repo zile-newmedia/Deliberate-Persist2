@@ -1,0 +1,85 @@
+# 列表删除数据
+
+# 删除数据（语法：1.del(目标)/del 目标   2.pop列表序列.pop(下标)）
+name_list = ['Tom','Lily','Rose']
+#del name_list （删除数据后显示报错）
+del (name_list) #(删除数据后显示空白)
+
+#pop():删除指定下标的数据（mourn为最后一个，并返回该数据）
+name_list = ['Tom','Lily','Rose']
+#del_name = name_list.pop()
+del_name = name_list.pop(1)
+print(del_name)
+print(name_list)
+
+#remove():移除列表中某个数据的第一个匹配项（语法：列表序列.remove(数据)）
+name_list = ['Tom','Lily','Rose']
+name_list.remove('Rose')
+print(name_list)
+
+#clear():清空列表
+name_list.clear()
+print(name_list)
+
+
+
+#列表修改数据
+#修改指定下标数据
+name_list = ['Tom','Lily','Rose']
+name_list[0] = 'Kobe'
+print(name_list)
+
+#逆置：reverse()
+list1 = [1,3,2,5,4,6]
+list1.reverse()
+print(list1)
+
+#排序：sort()
+"""
+1.语法：列表序列.sort(key = None,reverse = False)
+2.注意：reverse表示排序规则，"reverse = True"表示降序，"reverse = False"表示升序（默认）
+"""
+list1 = [1,3,2,5,4,6]
+#list1.sort(reverse = False)
+list1.sort(reverse = True)
+print(list1)
+
+
+
+#列表复制数据   函数:copy
+name_list = ['Tom','Lily','Rose']
+list1 = name_list.copy()
+print(list1)
+
+
+
+#列表的遍历之while
+#需求：依次打印列表中的各个数据
+"""
+1.准备表示下表标数据
+2.循环while
+  条件 i<3 len()  
+  遍历：依次按顺序访问到序列的每一个数据！！！
+  i += 1
+"""
+
+name_list = ['Tom','Lily','Rose']
+i = 0
+while i < len(name_list):
+    print(name_list[i])
+    i += 1
+
+
+#列表的遍历之for
+#需求：依次打印列表中的各个数据
+
+name_list = ['Tom','Lily','Rose']
+for i in name_list:
+  #遍历序列中的数据
+  print(i)
+  
+#注意：考虑到代码量，故列表的遍历使用优先选择"for"
+
+
+
+
