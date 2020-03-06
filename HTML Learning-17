@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learinig-17</title>
+
+    <style>
+                div{
+                width:100px;
+                height:100px;
+                font-size:30px;
+                background-color:rgba(255,0,0,.5);
+                <!--color:rgba(255,0,0,.5);-->
+                <!--opacity:0.5;-->
+                }
+
+
+                p1{text-transform:capitalize;}
+
+
+                p{width:100px;
+                     background-color:red;
+                     word-wrap:break-word;
+                     font-size:30px
+                }
+    </style>
+
+</head>
+
+<body>
+<h1>font的简写</h1>
+<h2>
+<ul>
+    <li>例子：p{font:italic bold 20px "黑体"；}</li>
+    <li>注意：
+        <ol>
+            <li>必须按照官方给定的顺序给值</li>
+            <li>font-size和font-family不可缺少</li>
+        </ol>
+    </li>
+</ul>
+</h2>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>颜色透明度与内容溢出</h1>
+<h2>
+<ul>
+    <li>overflow:当内容溢出元素框时，内容隐藏/自动/显示滚动条</li>
+    <li>语法：overflow:hiddden/auto/scroll</li>
+    <br>
+    <li>opacity:相当于"rgba"中的"a",表示透明度</li>
+    <br>
+    <li>例子：<xmp>
+        <head>
+            <style>
+               div{
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,.5);
+                <!--color:rgba(255,0,0,.5);-->
+                <!--opacity:0.5;-->
+                }
+            </style>
+        </head>
+
+        <body>
+            <div>
+                <p>Kobe</p>
+                <p>James</p>
+            </div>
+        </body>
+
+    </xmp></li>
+</ul>
+</h2>
+
+ <div>
+     <p2>Kobe</p2>
+     <br>
+     <p2>James</p2>
+ </div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>文本属性</h1>
+<h2>
+<ul>
+    <li>text-align
+       <ul>
+           <li>text-align:内容对齐方式，它是针对于元素的内容</li>
+           <li>属性值:left/center/right</li>
+           <li>语法:p{text-align:center;}</li>
+           <li>注意:p是块级元素，left/center/right会作用于整行</li>
+       </ul>
+    </li>
+<br>
+<br>
+    <li>text-decoration
+         <ul>
+           <li>指定文字有无装饰，默认值为none</li>
+           <li>属性值:underline/overline/line-through(贯穿线:类似于删除标签的结果)</li>
+       </ul>
+    </li>
+<br>
+<br>
+    <li>text-transform
+         <ul>
+           <li>设置对象中的文字大小写(默认值为none，表示无转换)</li>
+           <li>属性值：
+               <ol>
+                   <li>capitalize:将每个单词的第一个字母转换成大写</li>
+                   <li>uppercase:全部转换成大写</li>
+                   <li>lowercase:转换成小写</li>
+               </ol>
+           </li>
+           <li>语法：
+               <ol>
+                   <li><xmp>p{text-transform:capitalize;}
+   <p>i love you</p></xmp></li>
+                   <li><xmp>p{text-transform:uppercase;}
+   <p>i love you</p></xmp></li>
+                   <li><xmp>p{text-transform:lowercase;}
+   <p>I LOVE YOU</p></xmp></li>
+               </ol>
+                   </li>
+             <li>例子：<p1>i love you</p1></li>
+       </ul>
+    </li>
+<br>
+<br>
+    <li>text-indent
+         <ul>
+           <li>文本缩进，用来指定文本的第一行的缩进</li>
+           <li>语法:p{text-indent:2em}</li>
+           <li>注意:1em和当前页面字体大小相等。在浏览器中默认的文字是16px。所以，1em=16px</li>
+       </ul>
+    </li>
+<br>
+<br>
+    <li>word-wrap
+         <ul>
+           <li>设置当前超过指定容器的边界时是否换行。若容器中单词过长，超出容器本身宽度，则造成"长单词溢出"</li>
+           <li>语法:word-wrap:break-word;</li>
+           <li>作用效果:可设置过长的文本自动换行</li>
+       </ul>
+    </li>
+</ul>
+</h2>
+
+<p>Antetokounmpoisasuperstar</p>
+
+
+
+
+</body>
+</html>
