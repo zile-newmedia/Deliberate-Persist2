@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+<body>
+
+<h1>文本属性</h1>
+<h2>
+    <ul>
+        <li>vertical-align:设置对象内容的垂直对齐方式，是容器中元素相对内容的显示</li>
+        <li>line-height:设置对象的行高(无负值)
+            <ul>
+                <li>normal:默认</li>
+                <li>number:设置数字，此数字会与当前的字体尺寸相乘来设置行间距</li>
+                <li>length：设置固定的行间距</li>
+                <li>例子分析：
+         <xmp>
+           #注意：一般用行高来是一行文字垂直居中，当行高等于高时，一行文字垂直居中
+           p{height:80px;background-color:red;line-height:80px;}
+
+           #"number:设置数字，此数字会与当前的字体尺寸相乘来设置行间距"
+           p{height:80px;background-color:red;line-height:4;font-size:20px}
+         </xmp></li>
+            </ul>
+        </li>
+    </ul>
+</h2>
+
+<br>
+<br>
+<br>
+
+<h1>列表属性</h1>
+<h2>例子
+    <xmp>
+    .test{
+        list-style-image:"url";
+        list-style-position:outside/inside;
+        list-style-type:disc/circle/square;
+        }
+
+        <ul class="test">
+            <li>…………</li>
+        </ul>
+</xmp>
+</h2>
+
+
+<br>
+<br>
+<br>
+
+
+<h1>关系选择器</h1>
+<h2>
+    <ul>
+        <li>后代选择器(E F):选择所有被E元素包含的F元素，中间用空格隔开</li>
+        <li>子代选择器(E>F):选择所有作为E元素直接子元素F，对孙子元素不起作用，用大于号表示</li>
+        <li>相邻兄弟选择器(E+F):选择紧贴在E元素之后F元素，用加号表示，选择相邻的第一个兄弟元素
+            <ul>
+                <li>例子：<xmp>
+                    p+span{color:red;} #只会选中第一个span
+
+                    <p>这是p元素</p>
+                    <span>这是紧贴着p元素的第一个span</span>
+                    <span>这是第二个span</span>
+                </xmp></li>
+            </ul>
+        <li>通用兄弟选择器(E~F):选择E元素之后的所有兄弟元素F，作用于多个元素，用~号隔开</li>
+        <ul>
+            <li>#和E元素之后平级的F元素都被选中了，有几个就选中几个</li>
+        </ul>
+    </ul>
+</h2>
+
+</body>
+</html>
