@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-19</title>
+
+    <style>
+        a{text-decoration:none;font-size:32px;font-weight:800;}
+        a:link{<!--未访问的链接-->
+        color:gray;
+        }
+
+        a:visited{<!--已访问过的链接-->
+        color:orange;
+        }
+
+        a:hover{<!--鼠标移动到链接上-->
+        color:red;
+        }
+
+        a:active{<!--选定的链接，即鼠标按下时的样式-->
+        color:blue;
+        }
+
+        input:checked + span{color:red;}
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<h1>链接伪类选择器</h1>
+
+<h2><xmp>
+    <style>
+        a{text-decoration:none;font-size:16px;font-weight:800;}
+        a:link{<!--未访问的链接-->
+        color:fay;
+        }
+
+        a:visited{<!--已访问过的链接-->
+        color:orange;
+        }
+
+        a:hover{<!--鼠标移动到链接上-->
+        color:red;
+        }
+
+        a:active{<!--选定的链接，即鼠标按下时的样式-->
+        color:blue;
+        }
+    </style>
+
+    <a href ="#">秒杀</a>
+</xmp></h2>
+
+<h2>注意：链接伪类选择器主要针对超链接(a)；顺序不能更改；四个同时存在顺序为"lvha"</h2>
+  <a href ="#">秒杀</a>
+
+<br>
+<br>
+<br>
+
+
+<h1>结构性伪类选择器</h1>
+<h2>
+<ul>
+    <li>E:nth-child() 选中第几个子元素
+        <ul>
+            <li>选中第二个p元素：.box p:nth-child(2){color:red;}</li>
+            <li>选中第偶数个子元素：.box p:nth-child(even){color:red;}</li>
+            <li>选中第奇数个子元素：.box p:nth-child(odd){color:red;}</li>
+            <li><xmp>
+                <body>
+                <div class="box">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+                </body>
+            </xmp></li>
+        </ul>
+    </li>
+    <li>E:first-child 父元素的第一个子元素E(要使该属性生效，E元素必须是某个元素的子元素)
+        <ul>
+            <li>注意观察两个样式的区别:li:first-child{color:red;}  ul:first-child{color:red;}</li>
+            <li>这个属性的意思是被选中元素本身是子元素，并且它为父元素中的第一个</li>
+        </ul>
+    </li>
+    <li>checked：匹配用户界面上处于选中状态的元素E。(用于input type为radio与checkbox时)
+        <ul>
+            <li><xmp>
+                input:checked + span{color:red;}
+                <input type="radio" name="gender"><span>男</span>
+                <input type="radio" name="gender checked="checked"><span>女</span>
+            </xmp></li>
+            <li>input下被选中的元素紧挨着的span颜色为红色，因为选中状态会变，所以看着像动态</li>
+        </ul>
+    </li>
+</ul>
+</h2>
+
+<h2>
+<input type="radio" name="gender"><span>男</span>
+                <input type="radio" name="gender checked="checked"><span>女</span>
+</h2>
+
+
+
+</body>
+</html>
