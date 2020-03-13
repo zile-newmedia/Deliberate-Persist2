@@ -1,0 +1,52 @@
+dict1 = {'name':'Tom','age':20,'gender':'男'}
+
+# 字典常用操作之新增(与修改相同)
+"""
+写法：字典序列[key] = 值
+注意：如果key存在则修改这个key对应的值；如果key不存在则新增此键值对
+字典为可变类型
+"""
+dict1['name'] = 'Rose'
+print(dict1)
+
+dict1['id'] = 110
+print(dict1)
+
+
+
+# 字典常用词操作之删除
+"""
+del()/del:删除字典或删除字典中指定键值对
+clear():清空字典
+"""
+#dict1.clear()
+del dict1['gender']
+
+
+
+# 字典常用操作之查找
+#1.key值查找
+print(dict1['name'])
+
+
+#2.函数法(get、key、values、items)
+
+"""
+2.1 get()：
+·语法：字典序列.get(key,默认值)
+·注意：如果当前查找的key不存在则返回第二个参数（默认值），如果省略第二个参数，则返回None
+"""
+print(dict1.get('name'))
+print(dict1.get('id',110))
+print(dict1.get('id'))
+
+#2.2 keys():查找字典中所有的key,返回可迭代对象
+print(dict1.keys())
+
+#2.3 values()：查找字典中所有的value,返回可迭代对象
+print(dict1.values())
+
+#2.4 items():查找字典中所有的键值对，返回可迭代对现象，里面的数据是元组，元组数据1时字典的key，元组数据2是字典key对应的值
+print(dict1.items())
+
+
